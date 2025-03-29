@@ -1,12 +1,11 @@
 document.querySelectorAll('.game').forEach(game => {
-    game.addEventListener('click', () => {
-        const hiddenImages = game.nextElementSibling;
-        if (hiddenImages.style.right === '0px') {
-            hiddenImages.style.right = '-300px'; // Hide images
-            hiddenImages.style.opacity = '0'; // Hide images
-        } else {
-            hiddenImages.style.right = '0'; // Show images
-            hiddenImages.style.opacity = '1'; // Show images
-        }
+    const hiddenImages = game.querySelector('.hidden-images'); // Get the hidden images
+
+    game.addEventListener('mouseenter', () => {
+        hiddenImages.style.opacity = '1'; // Show hidden images
+    });
+
+    game.addEventListener('mouseleave', () => {
+        hiddenImages.style.opacity = '0'; // Hide hidden images
     });
 });
