@@ -50,7 +50,7 @@ h1, h2 {
 .image-box img {
     width: 100%; /* Make the image responsive */
     height: 100%; /* Make the image fill the box */
-    object-fit: contain; /* Ensure the entire image fits within the box without being cut off */
+    object-fit: none; /* Ensure the entire image fits within the box without being cut off */
 }
 
 .game h3 {
