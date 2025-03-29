@@ -22,29 +22,29 @@ main {
 
 .game-container {
     display: flex;
-    align-items: flex-start; /* Align items at the start */
-    justify-content: center; /* Center the game box */
-    position: relative;
-    margin-bottom: 20px; /* Add space below the game container */
+    justify-content: center; /* Center the game boxes */
+    flex-wrap: wrap; /* Allow wrapping of game boxes */
 }
 
 .game {
     text-align: center;
     margin: 20px;
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set text color */
 }
 
 .image-box {
-    width: 150px; /* Set a fixed width for the main image */
-    height: auto; /* Maintain aspect ratio */
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease;
+    width: 150px; /* Set a fixed width for the image box */
+    height: 150px; /* Set a fixed height for the image box */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin-bottom: 10px; /* Space below the image box */
 }
 
 .main-image {
-    width: 100%; /* Make the main image responsive */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the box */
+    width: 100%; /* Make the image responsive */
+    height: 100%; /* Make the image fill the box */
+    object-fit: cover; /* Cover the box while maintaining aspect ratio */
 }
 
 .hidden-images {
