@@ -79,3 +79,17 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #007bff; /* Same color as header */
+    color: white; /* Text color */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 5px 0; /* Margin for spacing */
+}
