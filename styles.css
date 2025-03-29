@@ -22,9 +22,10 @@ main {
 
 .game-container {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: flex-start; /* Align items at the start */
     justify-content: center; /* Center the game box */
     position: relative;
+    margin-bottom: 20px; /* Add space below the game container */
 }
 
 .game {
