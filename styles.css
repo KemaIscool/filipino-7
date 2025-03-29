@@ -1,80 +1,79 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #007bff;
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
 }
 
-main {
-    margin: 20px 0;
-}
-
-h1, h2 {
+h1 {
     margin: 0;
 }
 
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+/* Game Container Styles */
 .game-container {
     display: flex;
-    justify-content: center; /* Center the game box */
-    flex-wrap: wrap; /* Allow wrapping of game boxes */
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .game {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
     text-align: center;
-    margin: 20px;
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Set text color */
-    border: 1px solid #ccc; /* Border for the game box */
-    border-radius: 8px; /* Rounded corners for the box */
-    background-color: white; /* Background color for the game box */
-    padding: 10px; /* Padding inside the game box */
-    width: 300px; /* Fixed width for the game box */
-    transition: transform 0.2s; /* Transition effect for hover */
-}
-
-.image-box {
-    width: 100%; /* Full width of the game box */
-    height: 200px; /* Fixed height for the image box */
-    overflow: hidden; /* Hide overflow */
-    border-radius: 8px; /* Rounded corners for the box */
-    margin: 10px 0; /* Add some margin for spacing */
-}
-
-.image-box img {
-    width: 100%; /* Make the image responsive */
-    height: 100%; /* Make the image fill the box */
-    object-fit: contain; /* Ensure the entire image fits within the box without being cut off */
-}
-
-.game h3 {
-    margin: 10px 0; /* Space above and below the heading */
-}
-
-.game p {
-    margin: 5px 0; /* Space above and below the paragraphs */
+    width: 300px;
+    transition: transform 0.2s;
 }
 
 .game:hover {
-    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    transform: scale(1.05);
 }
 
+.image-box {
+    height: 200px;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    margin-top: 20px; /* Space above the footer */
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-footer a {
-    text-decoration: none; /* Remove underline from links */
-    color: #007bff; /* Link color */
+.footer-link {
+    color: #4CAF50;
+    text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+.footer-link:hover {
+    text-decoration: underline;
 }
