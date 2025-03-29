@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game App</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Game App</h1>
+    </header>
+    <main>
+        <h2>Choose a Game</h2>
+        <div class="game-container">
+            <a href="filipino-game.html" class="game">
+                <div class="image-box">
+                    <img src="filipino-game-image.jpg" alt="Ang Paglalakbay sa Filipino 7">
+                </div>
+                <h3>Ang Paglalakbay sa Filipino 7</h3>
+                <p>Explore the rich culture and language of the Philippines through this interactive game.</p>
+                <p>Learn about Filipino traditions, language, and history while having fun!</p>
+            </a>
+            <a href="guess-who.html" class="game">
+                <div class="image-box">
+                    <img src="guess-who-image.jpg" alt="Guess Who: Animal Edition">
+                </div>
+                <h3>Guess Who: Animal Edition</h3>
+                <p>Test your knowledge of animals with fun clues and guesses!</p>
+                <p>Can you guess the animal based on the clues provided? Challenge yourself!</p>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    margin: 20px 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center; /* Center the game box */
+    flex-wrap: wrap;
+}
+
+.game {
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    width: 300px; /* Adjust width as needed */
+    transition: transform 0.2s;
+}
+
+.image-box {
+    width: 100%; /* Full width of the game box */
+    height: 200px; /* Fixed height for the image box */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 8px; /* Rounded corners for the box */
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.image-box img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height for the image */
+    object-fit: contain; /* Ensure the entire image fits within the box */
+}
+
+.game h3 {
+    margin: 10px 0;
+}
+
+.game p {
+    margin: 5px 0;
+}
+
+.game:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
