@@ -48,9 +48,10 @@ h1, h2 {
 }
 
 .image-box img {
-    width: 200px;
-  height: 300px;
-  object-fit: contain; /* Ensure the entire image fits within the box without being cut off */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height for the image */
+    object-fit: contain; /*
 }
 
 .game h3 {
