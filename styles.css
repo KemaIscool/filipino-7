@@ -49,10 +49,10 @@ h1, h2 {
 
 .image-box img {
     width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height for the image */
-    object-fit: contain; /* Ensure the entire image fits within the box */
+    height: 100%; /* Make the image fill the box */
+    object-fit: contain; /* Ensure the entire image fits within the box without being cut off */
 }
+
 .game h3 {
     margin: 10px 0; /* Space above and below the heading */
 }
