@@ -45,25 +45,36 @@ h1, h2 {
     overflow: hidden; /* Hide overflow */
     border-radius: 8px; /* Rounded corners for the box */
     margin: 10px 0; /* Add some margin for spacing */
+    position: relative; /* Positioning for text overlay */
 }
 
 .image-box img {
     width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     max-height: 200px; /* Set a maximum height for the image */
-    object-fit: contain; /* Ensure the entire image fits within the box */
+    object-fit: cover; /* Ensure the entire image fits within the box */
 }
 
-.game h3 {
-    margin: 10px 0;
+.text-overlay {
+    position: absolute; /* Position text overlay */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* White text color */
+    padding: 5px; /* Padding for text */
+    text-align: center; /* Center text */
 }
 
-.game p {
-    margin: 5px 0;
+.hidden-images {
+    display: flex; /* Use flexbox to align images side by side */
+    margin-top: 10px; /* Space between main image and hidden images */
 }
 
-.game:hover {
-    transform: scale(1.05); /* Slightly enlarge the box on hover */
+.hidden-image {
+    width: 50px; /* Set a smaller width for hidden images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 5px; /* Space between hidden images */
 }
 
 footer {
