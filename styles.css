@@ -39,6 +39,7 @@ main {
     overflow: hidden; /* Hide overflow */
     border-radius: 8px; /* Optional: rounded corners */
     margin-bottom: 10px; /* Space below the image box */
+    position: relative; /* Positioning for text overlay */
     background-color: #fff; /* Background color for the image box */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
@@ -47,6 +48,17 @@ main {
     width: 100%; /* Make the image responsive */
     height: 100%; /* Make the image fill the box */
     object-fit: cover; /* Cover the box while maintaining aspect ratio */
+}
+
+.text-overlay {
+    position: absolute; /* Position text overlay */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* White text color */
+    padding: 5px; /* Padding for text */
+    text-align: center; /* Center text */
 }
 
 .hidden-images {
