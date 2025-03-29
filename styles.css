@@ -83,7 +83,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
-    background-color: #007bff; /* Same color as header */
+    background-color: #808080; /* grey */
     color: white; /* Text color */
     position: relative; /* Positioning */
     bottom: 0; /* Stick to the bottom */
