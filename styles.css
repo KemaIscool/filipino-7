@@ -16,54 +16,47 @@ main {
     margin: 20px 0;
 }
 
-h1, h2 {
-    margin: 0;
-}
-
 .game-container {
     display: flex;
+    align-items: center; /* Align items vertically */
     justify-content: center; /* Center the game box */
-    flex-wrap: wrap;
+    position: relative;
 }
 
 .game {
     text-align: center;
     margin: 20px;
-    text-decoration: none;
-    color: black;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: white;
-    padding: 10px;
-    width: 300px; /* Adjust width as needed */
-    transition: transform 0.2s;
 }
 
 .image-box {
-    width: 100%; /* Full width of the game box */
-    height: 200px; /* Fixed height for the image box */
-    overflow: hidden; /* Hide overflow */
-    border-radius: 8px; /* Rounded corners for the box */
-    margin: 10px 0; /* Add some margin for spacing */
-}
-
-.image-box img {
-    width: 100%; /* Make the image responsive */
+    width: 150px; /* Set a fixed width for the main image */
     height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height for the image */
-    object-fit: contain; /* Ensure the entire image fits within the box */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
 }
 
-.game h3 {
-    margin: 10px 0;
+.main-image {
+    width: 100%; /* Make the main image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the box */
 }
 
-.game p {
-    margin: 5px 0;
+.hidden-images {
+    display: flex; /* Use flexbox to align images side by side */
+    margin-left: 20px; /* Space between main image and hidden images */
+    opacity: 0; /* Initially hide the images */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
 
-.game:hover {
-    transform: scale(1.05); /* Slightly enlarge the box on hover */
+.hidden-image {
+    width: 50px; /* Set a smaller width for hidden images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 5px; /* Space between hidden images */
+}
+
+.game:hover .hidden-images {
+    opacity: 1; /* Show hidden images on hover */
 }
 
 footer {
@@ -71,3 +64,9 @@ footer {
     margin-top: 20px;
     padding: 10px 0;
     background-color: #808080;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
