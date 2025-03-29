@@ -23,20 +23,20 @@ h1, h2 {
 .game-container {
     display: flex;
     justify-content: center; /* Center the game box */
-    flex-wrap: wrap; /* Allow wrapping of game boxes */
+    flex-wrap: wrap;
 }
 
 .game {
     text-align: center;
     margin: 20px;
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Set text color */
-    border: 1px solid #ccc; /* Border for the game box */
-    border-radius: 8px; /* Rounded corners for the box */
-    background-color: white; /* Background color for the game box */
-    padding: 10px; /* Padding inside the game box */
-    width: 300px; /* Fixed width for the game box */
-    transition: transform 0.2s; /* Transition effect for hover */
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    width: 300px; /* Adjust width as needed */
+    transition: transform 0.2s;
 }
 
 .image-box {
@@ -45,33 +45,21 @@ h1, h2 {
     overflow: hidden; /* Hide overflow */
     border-radius: 8px; /* Rounded corners for the box */
     margin: 10px 0; /* Add some margin for spacing */
-    position: relative; /* Positioning for text overlay */
 }
 
 .image-box img {
     width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     max-height: 200px; /* Set a maximum height for the image */
-    object-fit: cover; /* Ensure the entire image fits within the box */
-}
-
-.text-overlay {
-    position: absolute; /* Position text overlay */
-    bottom: 0; /* Align to the bottom */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white; /* White text color */
-    padding: 5px; /* Padding for text */
-    text-align: center; /* Center text */
+    object-fit: contain; /* Ensure the entire image fits within the box */
 }
 
 .game h3 {
-    margin: 10px 0; /* Space above and below the heading */
+    margin: 10px 0;
 }
 
 .game p {
-    margin: 5px 0; /* Space above and below the paragraphs */
+    margin: 5px 0;
 }
 
 .game:hover {
@@ -80,14 +68,14 @@ h1, h2 {
 
 footer {
     text-align: center;
-    margin-top: 20px; /* Space above the footer */
+    margin-top: 20px;
 }
 
 footer a {
-    text-decoration: none; /* Remove underline from links */
-    color: #007bff; /* Link color */
+    text-decoration: none;
+    color: #007bff;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
