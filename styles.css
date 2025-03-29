@@ -41,7 +41,7 @@ h1, h2 {
 
 .image-box {
     width: 100%; /* Full width of the game box */
-    height: 100%; /* Fixed height for the image box */
+    height: 200px; /* Fixed height for the image box */
     overflow: hidden; /* Hide overflow */
     border-radius: 8px; /* Rounded corners for the box */
     margin: 10px 0; /* Add some margin for spacing */
@@ -51,9 +51,8 @@ h1, h2 {
     width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     max-height: 200px; /* Set a maximum height for the image */
-    object-fit: contain; /*
+    object-fit: contain; /* Ensure the entire image fits within the box */
 }
-
 .game h3 {
     margin: 10px 0; /* Space above and below the heading */
 }
