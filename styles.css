@@ -49,13 +49,15 @@ h2 {
 }
 
 .image-box {
-    height: 200px;
-    overflow: hidden;
+    width: 100%; /* Make the image box full width */
+    height: 200px; /* Set a fixed height for the image box */
+    overflow: hidden; /* Hide overflow */
 }
 
 .main-image {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make the image full width */
+    height: 100%; /* Make the image full height */
+    object-fit: cover; /* Cover the entire box without distortion */
 }
 
 /* Footer Styles */
