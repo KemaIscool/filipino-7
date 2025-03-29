@@ -39,6 +39,8 @@ main {
     overflow: hidden; /* Hide overflow */
     border-radius: 8px; /* Optional: rounded corners */
     margin-bottom: 10px; /* Space below the image box */
+    background-color: #fff; /* Background color for the image box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .main-image {
