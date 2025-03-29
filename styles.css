@@ -3,6 +3,9 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
 header {
@@ -13,6 +16,7 @@ header {
 }
 
 main {
+    flex: 1; /* Allow the main content to grow and fill the available space */
     margin: 20px 0;
 }
 
@@ -37,7 +41,7 @@ main {
 }
 
 .main-image {
-    width: 100 %; /* Make the main image responsive */
+    width: 100%; /* Make the main image responsive */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the box */
 }
@@ -63,10 +67,18 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
-    background-color: #808080;
+    background-color: #808080; /* Grey background for footer */
+    color: white; /* White text color for footer */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
 }
 
 footer a {
-    color: white;
-    text-decoration: none;
+    color: white; /* White link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
