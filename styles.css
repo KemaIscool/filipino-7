@@ -37,7 +37,7 @@ main {
 }
 
 .main-image {
-    width: 100%; /* Make the main image responsive */
+    width: 100 %; /* Make the main image responsive */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the box */
 }
