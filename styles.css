@@ -3,9 +3,6 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
 header {
@@ -16,84 +13,69 @@ header {
 }
 
 main {
-    flex: 1; /* Allow the main content to grow and fill the available space */
     margin: 20px 0;
+}
+
+h1, h2 {
+    margin: 0;
 }
 
 .game-container {
     display: flex;
-    justify-content: center; /* Center the game boxes */
-    flex-wrap: wrap; /* Allow wrapping of game boxes */
+    justify-content: center; /* Center the game box */
+    flex-wrap: wrap;
 }
 
 .game {
     text-align: center;
     margin: 20px;
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Set text color */
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    width: 300px; /* Adjust width as needed */
+    transition: transform 0.2s;
 }
 
 .image-box {
-    width: 150px; /* Set a fixed width for the image box */
-    height: 150px; /* Set a fixed height for the image box */
+    width: 100%; /* Full width of the game box */
+    height: 200px; /* Fixed height for the image box */
     overflow: hidden; /* Hide overflow */
-    border-radius: 8px; /* Optional: rounded corners */
-    margin-bottom: 10px; /* Space below the image box */
-    position: relative; /* Positioning for text overlay */
-    background-color: #fff; /* Background color for the image box */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px; /* Rounded corners for the box */
+    margin: 10px 0; /* Add some margin for spacing */
 }
 
-.main-image {
+.image-box img {
     width: 100%; /* Make the image responsive */
-    height: 100%; /* Make the image fill the box */
-    object-fit: cover; /* Cover the box while maintaining aspect ratio */
-}
-
-.text-overlay {
-    position: absolute; /* Position text overlay */
-    bottom: 0; /* Align to the bottom */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white; /* White text color */
-    padding: 5px; /* Padding for text */
-    text-align: center; /* Center text */
-}
-
-.hidden-images {
-    display: flex; /* Use flexbox to align images side by side */
-    margin-left: 20px; /* Space between main image and hidden images */
-    opacity: 0; /* Initially hide the images */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-}
-
-.hidden-image {
-    width: 50px; /* Set a smaller width for hidden images */
     height: auto; /* Maintain aspect ratio */
-    margin: 0 5px; /* Space between hidden images */
+    max-height: 200px; /* Set a maximum height for the image */
+    object-fit: contain; /* Ensure the entire image fits within the box */
 }
 
-.game:hover .hidden-images {
-    opacity: 1; /* Show hidden images on hover */
+.game h3 {
+    margin: 10px 0;
+}
+
+.game p {
+    margin: 5px 0;
+}
+
+.game:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
-    padding: 10px 0;
-    background-color: #808080; /* Grey background for footer */
-    color: white; /* White text color for footer */
-    position: relative; /* Positioning */
-    bottom: 0; /* Stick to the bottom */
-    width: 100%; /* Full width */
 }
 
 footer a {
-    color: white; /* White link color */
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
+    color: #007bff;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
