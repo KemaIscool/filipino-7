@@ -66,17 +66,6 @@ h1, h2 {
     text-align: center; /* Center text */
 }
 
-.hidden-images {
-    display: flex; /* Use flexbox to align images side by side */
-    margin-top: 10px; /* Space between main image and hidden images */
-}
-
-.hidden-image {
-    width: 50px; /* Set a smaller width for hidden images */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 5px; /* Space between hidden images */
-}
-
 footer {
     text-align: center;
     margin-top: 20px;
