@@ -41,7 +41,7 @@ h1, h2 {
 
 .image-box {
     width: 100%; /* Full width of the game box */
-    height: 200px; /* Fixed height for the image box */
+    height: 100%; /* Fixed height for the image box */
     overflow: hidden; /* Hide overflow */
     border-radius: 8px; /* Rounded corners for the box */
     margin: 10px 0; /* Add some margin for spacing */
